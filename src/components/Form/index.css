@@ -1,0 +1,20 @@
+.buttonGroup__header button{
+    margin: 5px;
+}
+.form__container{
+    display: flex;
+    flex-flow: column;
+    border: 1 solid black;
+    border-radius: 4px;
+    padding : 20px;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.form__container img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.MuiFormControl-root.field_margin {
+    flex: 1 1 100%;
+    margin: 0 5px 20px;
+}

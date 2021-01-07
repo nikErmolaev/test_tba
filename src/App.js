@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+
+import Authentication from './components/Authentication'
+import Main from './components/Main'
+
+import { SettingsContainer } from './store/container/SettingsContainer'
+import { AuthContainer } from './store/container/AuthContainer'
+import { StocksContainer } from './store/container/StocksContainer'
+import { CompanyContainer } from './store/container/CompanyContainer'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthContainer>
+      <Authentication>
+        <SettingsContainer>
+          <CompanyContainer>
+            <StocksContainer>
+            <Main />
+            </StocksContainer>
+          </CompanyContainer>
+        </SettingsContainer>
+      </Authentication>
+    </AuthContainer>
   );
 }
 

@@ -1,0 +1,15 @@
+.wrapper_app, .container_app {
+    width: 100%;
+}
+
+.container_app {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    padding: 15px 0;
+}
+
+.container_table {
+    padding: 0 15px;
+}
